@@ -1,0 +1,16 @@
+{
+  "RequestType": "Create",
+  "RequestId": "123456",
+  "ResponseURL": "pre-signed-url-for-create-response",
+  "ResourceType": "Custom::LogSubscriber",
+  "LogicalResourceId": "123456",
+  "StackId": "arn:aws:cloudformation:us-east-1:namespace:stack/stack-name/guid",
+  "ResourceProperties": {
+    "LogGroup" : "test-group",
+    "Name" : "a-filter-name",
+    "Pattern" : "[ someData ]",
+    "Role" : "arn:aws:iam::318741577598:role/kibana-CloudWatchLogsKinesisRole-BVPG8BO73O1H",
+    "Stream" : "arn:aws:kinesis:us-east-1:318741577598:stream/kibana-KinesisSubscriptionStream-1453NJ9J0L4EE",
+    "Region" : "us-east-1"
+  }
+}
